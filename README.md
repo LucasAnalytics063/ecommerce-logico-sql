@@ -9,7 +9,7 @@ Este projeto implementa o **modelo lógico relacional de um sistema de e-commerc
 Conforme proposto no desafio, três refinamentos foram incorporados ao modelo base:
 
 |               Refinamento         |                                       Solução de Modelagem                                                    |
-|--------------------------------- -|---------------------------------------------------------------------------------------------------------------|
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------|
 | **Cliente PJ e PF exclusivos**    | Especialização com `cliente_pf` e `cliente_pj` como subtipos (herança), com triggers garantindo exclusividade |
 | **Múltiplas formas de pagamento** | Relacionamento N:N via tabela associativa `cliente_forma_pagamento`                                           |
 | **Entrega com status e rastreio** | Tabela `entrega` com ENUM de status e campo `codigo_rastreio` único                                           |
